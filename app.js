@@ -5,6 +5,12 @@ const path = require('path');
 var fs = require('fs');
 
 const port = process.env.port || 3000
+//heroku
+const { Pool } = require('pg');
+const pool = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false }
+});
 
 const authRoute = require('./routes/auth-route');
 
