@@ -17,7 +17,7 @@ var GcForm = mongoose.model('GcForm',{
     name:{
        type:String
     },
-      battlion:{
+      battalion:{
         type:String
      },
        company:{
