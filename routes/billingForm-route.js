@@ -38,9 +38,10 @@ router.post('/',(req,res)=>{
  var addBillingForm = new BillingForm({
 
     recordNumber:req.body.recordNumber,
+    gcType:req.body.gcType,
     gcNumber: req.body.gcNumber,
     name :req.body.name,
-    battlion: req.body.battalion,
+    battalion: req.body.battalion,
     company: req.body.company,
     date: req.body.date,
     billNoDetails: req.body.billNoDetails,
@@ -71,9 +72,10 @@ router.put('/:id',(req,res)=>{
 
     var addBillingForm = ({
         recordNumber:req.body.recordNumber,
+        gcType:req.body.gcType,
         gcNumber: req.body.gcNumber,
         name :req.body.name,
-        battlion: req.body.battalion,
+        battalion: req.body.battalion,
         company: req.body.company,
         date: req.body.date,
         billNoDetails: req.body.billNoDetails,

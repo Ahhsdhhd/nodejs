@@ -14,6 +14,10 @@ var BillingForm = mongoose.model('BillingForm',{
     recordNumber:{
         type:String
     },
+    gcType:{
+      type:String
+      
+    },
     gcNumber:{
        type:String
     },
@@ -21,7 +25,7 @@ var BillingForm = mongoose.model('BillingForm',{
     name:{
        type:String
     },
-      battlion:{
+      battalion:{
         type:String
      },
        company:{

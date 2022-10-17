@@ -21,7 +21,7 @@ var ExpenditureForm = mongoose.model('ExpenditureForm',{
     name:{
        type:String
     },
-      battlion:{
+      battalion:{
         type:String
      },
        company:{
