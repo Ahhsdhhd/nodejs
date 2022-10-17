@@ -13,8 +13,10 @@ var ExpenditureForm = mongoose.model('ExpenditureForm',{
 
     recordNumber:{
         type:String
+    },gcType:{
+      type:String
     },
-    gcNumber:{
+        gcNumber:{
        type:String
     },
    

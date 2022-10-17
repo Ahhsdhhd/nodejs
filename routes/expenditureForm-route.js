@@ -38,6 +38,7 @@ router.post('/',(req,res)=>{
  var addExpenditureForm = new ExpenditureForm({
 
     recordNumber:req.body.recordNumber,
+    gcType:req.body.gcType,
     gcNumber: req.body.gcNumber,
     name :req.body.name,
     battalion: req.body.battalion,
@@ -70,6 +71,7 @@ router.put('/:id',(req,res)=>{
 
     var addExpenditureForm = ({
         recordNumber:req.body.recordNumber,
+        gcType:req.body.gcType,
         gcNumber: req.body.gcNumber,
         name :req.body.name,
         battalion: req.body.battalion,
